@@ -1,19 +1,70 @@
-h1 , p {
-  text-align: center;
+div:hover {
+  border: 6px solid black;
 }
 
-li:hover{
-  background-color: chartreuse;
-
-  transition: 0.5s;
-
-  opacity: 0.7;
+.red{
+  background-color: red;
 }
 
-li:active{
-  font-family:'Courier New', Courier, monospace;
+.blue{
+  background-color:blue;
 }
 
-ol {
-  list-style: none;
+.green{
+  background-color:green;
+}
+
+.black{
+  background-color: black;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+div:nth-of-type(1) > h3 {
+  color: purple;
+}
+
+div:nth-of-type(2) > h3 {
+  color: yellow;
+}
+
+div:nth-of-type(3) > h3 {
+  color: blue;
+}
+
+div:nth-of-type(4) > h3 {
+  color: white;
+}
+
+div:nth-of-type(5) > h3 {
+  color: green;
+}
+
+
+div:nth-of-type(2) > h3 {
+  color: green 
+}
+
+div:nth-of-type(3) > h3 {
+  font-size: 20px;
+}
+
+div:nth-of-type(4) > h3 {
+  font-family: monospace;
+}
+
+div:nth-of-type(5) > h3 {
+  font-style: italic
+}
+
+/* 4. Faça a terceira div ser maior que as demais. */
+div:nth-of-type(3) {
+  height: 100px;
+}
+
+/* 5. Deixe as tags ímpares <h3> com o texto em itálico. */
+div:nth-child(odd) h3 {
+  font-style: italic
 }
