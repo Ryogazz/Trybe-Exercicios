@@ -89,10 +89,16 @@
         imagem.src = "https://picsum.photos/200"
         section2.appendChild(imagem);
 
-        const lista = document.createElement("li");
-        lista.document.createTextNode("um", "dois", "tres")
-        section3.appendChild(lista);        
-
+        const valores = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
+        const lista = document.createElement("ul");
+        section3.appendChild(lista);
+        for (let x in valores){
+            const linha = document.createElement('li');
+            linha.innerHTML = valores[x];
+            lista.appendChild(linha);
+        }
+           
         
 
 
