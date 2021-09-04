@@ -64,18 +64,14 @@
         h1.appendChild(document.createTextNode("Exercício 5.2 - JavaScript DOM"));
         document.body.appendChild(h1);
 
-
-
         const mainN = document.createElement("main");
         mainN.className = "main-content";
         document.body.appendChild(mainN);
-
 
         const section1 = document.createElement("section");
         section1.className = "center-content";
         mainN.appendChild(section1);
 
-  
         const criandoP = document.createElement("p");
         criandoP.appendChild(document.createTextNode("Algum texto de exemplo"));
         section1.appendChild(criandoP);
@@ -87,6 +83,18 @@
         const section3 = document.createElement("section");
         section3.className = "right-content";
         mainN.appendChild(section3);
+
+        const imagem = document.createElement("img");
+        imagem.className = "small-image";
+        imagem.src = "https://picsum.photos/200"
+        section2.appendChild(imagem);
+
+        const lista = document.createElement("li");
+        lista.document.createTextNode("um", "dois", "tres")
+        section3.appendChild(lista);        
+
+        
+
 
     </script>
 </body>
