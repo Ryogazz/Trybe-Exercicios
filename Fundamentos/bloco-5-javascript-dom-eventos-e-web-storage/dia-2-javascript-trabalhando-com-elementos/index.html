@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        const h1 = document.createElement("h1");
+        h1.appendChild(document.createTextNode("Exercício 5.2 - JavaScript DOM"));
+        document.body.appendChild(h1);
+
+        const mainN = document.createElement("main");
+        mainN.className = "main-content";
+        document.body.appendChild(mainN);
+
+        const section1 = document.createElement("section");
+        section1.className = "center-content";
+        mainN.appendChild(section1);
+
+        const criandoP = document.createElement("p");
+        criandoP.appendChild(document.createTextNode("Algum texto de exemplo"));
+        section1.appendChild(criandoP);
+
+        const section2 = document.createElement("section");
+        section2.className = "left-content";
+        mainN.appendChild(section2);
+
+        const section3 = document.createElement("section");
+        section3.className = "right-content";
+        mainN.appendChild(section3);
+
+        const imagem = document.createElement("img");
+        imagem.className = "small-image";
+        imagem.src = "https://picsum.photos/200"
+        section2.appendChild(imagem);
+
+        const valores = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
+        const lista = document.createElement("ul");
+        section3.appendChild(lista);
+        for (let x in valores){
+            const linha = document.createElement("li");
+            linha.innerHTML = valores[x];
+            lista.appendChild(linha);
+        }
+
+           
+        const h3_1 = document.createElement ("h3");
+        mainN.appendChild(h3_1);
+
+        const h3_2 = document.createElement ("h3");
+        mainN.appendChild(h3_2);
+
+        const h3_3 = document.createElement ("h3");
+        mainN.appendChild(h3_3);
+
+        const titulo = document.createElement ("title");
+        h1.appendChild(titulo);
+
+        const descricao_1 = document.createElement ("description");
+        h3_1.appendChild(descricao_1);
+
+        const descricao_2 = document.createElement ("description");
+        h3_2.appendChild(descricao_2);
+
+        const descricao_3 = document.createElement ("description");
+        h3_3.appendChild(descricao_3);
+
+        const removeSection = document.getElementsByClassName("left-content")[0];
+        mainN.removeChild(removeSection);
+        
+        const centralizar = document.getElementsByClassName("right-content")[0];
+        centralizar.style.marginRight = "auto";
+        
+        const verde = document.getElementsByClassName("center-content")[0];
+        verde.parentNode.style.backgroundColor = "green";
+
+        ul.lastChild.remove();
+        ul.lastChild.remove();
+        
+
+        section3.setAttribute;
+
+
+
+    </script>
+</body>
+
+</html>
