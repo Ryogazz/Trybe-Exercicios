@@ -94,12 +94,48 @@
         const lista = document.createElement("ul");
         section3.appendChild(lista);
         for (let x in valores){
-            const linha = document.createElement('li');
+            const linha = document.createElement("li");
             linha.innerHTML = valores[x];
             lista.appendChild(linha);
         }
+
            
+        const h3_1 = document.createElement ("h3");
+        mainN.appendChild(h3_1);
+
+        const h3_2 = document.createElement ("h3");
+        mainN.appendChild(h3_2);
+
+        const h3_3 = document.createElement ("h3");
+        mainN.appendChild(h3_3);
+
+        const titulo = document.createElement ("title");
+        h1.appendChild(titulo);
+
+        const descricao_1 = document.createElement ("description");
+        h3_1.appendChild(descricao_1);
+
+        const descricao_2 = document.createElement ("description");
+        h3_2.appendChild(descricao_2);
+
+        const descricao_3 = document.createElement ("description");
+        h3_3.appendChild(descricao_3);
+
+        const removeSection = document.getElementsByClassName("left-content")[0];
+        mainN.removeChild(removeSection);
         
+        const centralizar = document.getElementsByClassName("right-content")[0];
+        centralizar.style.marginRight = "auto";
+        
+        const verde = document.getElementsByClassName("center-content")[0];
+        verde.parentNode.style.backgroundColor = "green";
+
+        ul.lastChild.remove();
+        ul.lastChild.remove();
+        
+
+        section3.setAttribute;
+
 
 
     </script>
