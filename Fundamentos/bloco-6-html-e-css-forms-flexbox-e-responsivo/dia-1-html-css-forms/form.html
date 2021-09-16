@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <forms>
+        <fieldset>
+            <label for="">Digite o seu nome: </label>
+            <input type="text" placeholder="Digite o seu nome" name="Digite o seu nome:" maxlength="40" required>
+            
+            <label for="">Digite o E-mail: </label>
+            <input type="email" placeholder="email@email.com" name="Digite o E-mail:" maxlength="50" required>
+
+            <label for="">Digite o seu CPF: </label>
+            <input type="text" placeholder="000-000-000-00" name="Digite o seu cpf:" maxlength="11" required>
+
+            <label for="">Digite o seu endereço: </label>
+            <input type="text" placeholder="Rua x numero: xxx, bairro xxx" name="Digite o seu endereço:" maxlength="200" required>
+
+            <label for="">Digite a sua cidade: </label>
+            <input type="text" placeholder="digite a sua cidade" name="Digite a sua cidade" maxlength="28" required>
+
+            <label for="estado" >Escolha o seu estado: </label>
+            <select id="estado" required></select>
+
+            
+            <input type="radio" value="Casa" name="Casa ou apartamento" id="casa">
+            <label for="casa" name="Casa ou apartamento" >Casa</label><br>
+            <input type="radio" value="Apartamento" name="Casa ou apartamento" id="apto">
+            <label for="apto" name="Casa ou apartamento">Apartamento</label><br>
+        </fieldset>
+
+        <fieldset>
+            <label for="">Resumo do seu curriculo</label> <br>
+            <textarea maxlength="1000" required></textarea>
+
+            <label for="">Cargo</label>
+            <input type="text" maxlength="40" required>
+
+            <label for="">Descrição do Cargo</label>
+            <input type="text" maxlength="500" required>
+
+            <label for="">Data de inicio</label>
+            <input type="date" id="data" required>
+        </fieldset>
+
+        <button type="submit" id="botao"></button>
+    </forms>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
