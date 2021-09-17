@@ -37,4 +37,14 @@ function criarElementoOpstion() {
         estados.appendChild(criarElementoOpstion).value = states[index].label;//coloca em option o valor (label) do state e poe como filjo do option criado
     }
 }
-criarElementoOpstion();
+
+$( function() {
+    $( "#date" ).datepicker();
+  } );
+
+window.onload = function() {
+    criarElementoOpstion();
+  };
+
+
+

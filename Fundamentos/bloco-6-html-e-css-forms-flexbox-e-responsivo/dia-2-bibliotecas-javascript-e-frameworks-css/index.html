@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,66 @@
     <link rel="stylesheet" href="style.css">
     <script async src="script.js"></script>
     <title>Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </head>
+
 <body>
     <main>
         <form action="nssnsns" method="post">
+
             <fieldset>
+
                 <legend>Dados</legend>
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name" maxlength="40" required>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" maxlength="50" required>
-                <label for="cpf">CPF</label required>
-                <input type="text" name="cpf" id="cpf" maxlength="11" required>
-                <label for="address">Endereço</label>
-                <input type="text" name="address" id="address" maxlength="200" required>
-                <label for="city">Cidade</label>
-                <input type="text" name="city" id="city" maxlength="28" required>
-                <label for="estate">Estado</label>
-                <select name="estate" id="estate" required>
-                    <option value="none">Selecionar Estado</option>
-                </select>
+
+                <div class="field">
+                    <label for="name">Nome</label>
+                    <div class="control">
+                        <input type="text" name="name" id="name" maxlength="40" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <div class="control">
+                        <input type="email" name="email" id="email" maxlength="50" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="cpf">CPF</label required>
+                    <div class="control">
+                        <input type="text" name="cpf" id="cpf" maxlength="11" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="address">Endereço</label>
+                    <div class="control">
+                        <input type="text" name="address" id="address" maxlength="200" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="city">Cidade</label>
+                    <div class="control">
+                        <input type="text" name="city" id="city" maxlength="28" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="estate">Estado</label>
+                    <div class="control">
+                        <select name="estate" id="estate" required>
+                            <option value="none">Selecionar Estado</option>
+                        </select>
+                    </div>
+                </div>
+
                 <input type="radio" name="home-type" id="home-type-1">
                 <label for="home-type-1">Casa</label>
                 <input type="radio" name="home-type" id="home-type-2">
                 <label for="home-type-2">Apartamento</label>
+
             </fieldset>
             <fieldset>
                 <legend>Emprego</legend>
@@ -40,12 +77,17 @@
                 <input type="text" name="role" id="role" maxlength="40" required>
                 <label for="role-description">Descrição do cargo</label>
                 <input type="text" name="role-description" id="role-description">
-                <label for="date">Data de início</label>
+                <label for="date" id="date">Data de início</label>
                 <input type="text" name="date" id="date" required>
             </fieldset>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
+            <div class="buttons">
+                <button type="submit" class="button is-success">Enviar</button>
+                <button type="reset" class="button is-warning">Limpar</button>
+            </div>
+            </div>
+            </div>
         </form>
     </main>
 </body>
+
 </html>
