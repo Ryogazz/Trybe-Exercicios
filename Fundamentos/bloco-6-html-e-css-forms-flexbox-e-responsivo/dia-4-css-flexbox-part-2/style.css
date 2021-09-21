@@ -19,12 +19,13 @@
     display: flex;
     flex-basis: 268px; 
     order: -1;  
+    flex-basis:content;
   }
   
   .menu-container {
     display: flex;
     flex-basis: 500px;
-
+    flex-grow: 1;
   }
   
   .menu-container ul {
