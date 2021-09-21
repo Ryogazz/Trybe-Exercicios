@@ -17,7 +17,8 @@
 
   .logo-container {
     display: flex;
-    flex-basis: 268px;   
+    flex-basis: 268px; 
+    order: -1;  
   }
   
   .menu-container {
