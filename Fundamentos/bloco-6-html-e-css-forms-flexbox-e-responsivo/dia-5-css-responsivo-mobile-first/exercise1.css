@@ -23,5 +23,8 @@ figure {
     h1{
         font-size: 20px;
     }
+    figure{
+        line-height: 50px;
+    }
 
  }
