@@ -19,6 +19,7 @@ figure {
 @media (min-width: 700px) {
     body{
         font-size:x-large;
+        margin: 30px;
     }
     h1{
         font-size: 20px;
