@@ -1,12 +1,17 @@
-body {
-
+body{
+    font-size:large;
+    margin: 10px;
 }
-h1 {
-
+h1{
+    font-size: 20px;
 }
-h2 {
-
+h2{
+    font-size: 15px;
 }
+figure{
+    line-height: 50px;
+}
+
 
 img {
     max-width: 100%;
@@ -18,14 +23,49 @@ figure {
 
 @media (min-width: 700px) {
     body{
-        font-size:x-large;
-        margin: 30px;
+        font-size: x-large;
+        margin: 50px;
+        background-color: burlywood;
     }
     h1{
-        font-size: 20px;
+        font-size:xx-large;
+    }
+    h2{
+        font-size: larger;
+    }
+    .img{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     figure{
-        line-height: 50px;
+        flex-basis: 50%;
+        flex-grow: 1;
+        width: 200px;
     }
 
+    @media (min-width: 1200px) {
+        body{
+            font-size: x-large;
+            margin: 50px;
+            background-color: cadetblue;
+            max-width:max-content;
+        }
+        h1{
+            font-size:xx-large;
+        }
+        h2{
+            font-size: larger;
+        }
+        .img{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        figure{
+            flex-basis: 50%;
+            flex-grow: 1;
+            width: 500px;
+        }
+    }
  }
