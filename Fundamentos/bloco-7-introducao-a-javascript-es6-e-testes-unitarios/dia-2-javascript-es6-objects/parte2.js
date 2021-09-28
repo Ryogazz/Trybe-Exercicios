@@ -38,4 +38,8 @@
     return total;
   }
 
+  const posicao = (objeto, valor) => objeto.values(objeto)[valor];
+
+  const getValueByNumber = (obj,number) => Object.values(obj)[number];
+
   console.log(numeroAlunos(allLessons))
