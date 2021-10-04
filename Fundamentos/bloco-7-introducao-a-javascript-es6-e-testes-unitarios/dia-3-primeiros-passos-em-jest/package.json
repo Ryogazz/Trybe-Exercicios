@@ -1,10 +1,10 @@
 {
-  "name": "dia-3-primeiros-passos-em-jest",
+  "name": "my_new_project",
   "version": "1.0.0",
   "description": "",
-  "main": "sum.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
